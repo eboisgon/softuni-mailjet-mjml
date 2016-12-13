@@ -1,0 +1,19 @@
+<html>
+<body>
+<table>
+{% for article in var:products %}
+<tr><td>{{ article.name }}</td>
+    <td>{{article.number}}</td>
+    <td>{{article.price}}</td>
+    <td>{{article.totalprice}}</td>
+</tr>
+{% endfor%}
+<tr>
+	<td></td><td></td>
+	<td>{{var:vat}}</td>
+	<td>{{var:totalprice}}</td>
+<tr><td>
+</table>
+</body>
+</html>
+
